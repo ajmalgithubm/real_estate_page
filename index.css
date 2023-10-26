@@ -29,9 +29,31 @@ html {
     transition: all .3s linear;
 }
 
-body{
+body {
     background: #f7f7f7;
 }
+
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    margin-top: 1.7rem;
+    display: inline-block;
+    padding: .8rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color: var(--red);
+    background: var(--light-red);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--red);
+    color: #fff;
+}
+
 
 
 
@@ -100,6 +122,71 @@ header .icons #menu-bars {
 /* Header style end  */
 
 
+/* Home style start */
+
+.home {
+    min-height: 100vh;
+    background: url('/image/home2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home form {
+    margin-top: 7rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    width: 70rem;
+    padding: 2rem;
+}
+
+.home form h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.home form .button-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home form .button-container .btn {
+    flex: 1;
+}
+
+.home form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.home form .input-box input,
+.home form .input-box select {
+    flex: 1  1 25rem;
+    border: .1rem solid #333;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-transform: none;
+}
+
+.home form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+/* Home style end */
 
 
 
@@ -120,6 +207,10 @@ header .icons #menu-bars {
 
     header {
         padding: 1.5rem 1rem;
+    }
+
+    section{
+        padding: 1.5rem;
     }
 }
 
@@ -143,13 +234,15 @@ header .icons #menu-bars {
 
     }
 
-    header .active{
+    header .active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-    .fa-times{
+
+    .fa-times {
         transform: rotate(180deg);
         transition: 0.2s linear;
     }
+
     header .navbar a {
         display: block;
         padding: 1.5rem;
@@ -158,11 +251,14 @@ header .icons #menu-bars {
         border: .1rem solid #333;
         box-shadow: o 0.5rem 1rem rgba(0, 0, 0, 0.1);
     }
+        .home form{
+            margin-top: 10rem;
+        }
 }
 
 
-@media ( max-width:450px ) {
-    html{
+@media (max-width:450px) {
+    html {
         font-size: 50%;
     }
 }

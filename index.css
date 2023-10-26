@@ -21,9 +21,22 @@
     color: var(--red);
 }
 
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    color: var(--text-color);
+
+}
+.heading span{
+    color: var(--red);
+    background: var(--light-red);
+    border-radius: 0.5rem;
+    padding: .2rem 1.5rem;
+}
+
 html {
     font-size: 62.5%;
-    overflow: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
     transition: all .3s linear;
@@ -126,11 +139,6 @@ header .icons #menu-bars {
 
 .home {
     min-height: 100vh;
-    background: url('/image/home2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,9 +192,45 @@ header .icons #menu-bars {
     margin-top: 2rem;
 }
 
-
-
 /* Home style end */
+
+
+
+/* Services style start */
+
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.service .box-container .box{
+    flex: 1 1 30rem;
+   background: #fff;
+   border-radius: .5rem;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+   border: .1rem solid rgba(0, 0, 0, 0.2);
+   text-align: center;
+   padding: 2rem;
+}
+
+.service .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+.service .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: .5rem 0;
+    line-height: 2rem;
+}
+
+.service .box-container .box img{
+    width: 100%;
+}
+
+/* Services style end */
+
 
 
 

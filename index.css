@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --red: #ff5a3c;
+    --light-red: #f9eded;
+    --text-color: #333
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    color: var(--red);
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    transition: all .3s linear;
+}
+
+body{
+    background: #f7f7f7;
+}
+
+
+
+
+
+/* Header style start */
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    padding: 1.5rem 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--text-color);
+    position: relative;
+}
+
+header .logo span {
+    color: var(--red);
+}
+
+header .navbar a {
+    color: var(--text-color);
+    font-size: 1.9rem;
+    padding: 0 1.5rem;
+}
+
+header .navbar a:hover {
+    color: var(--red);
+}
+
+header .icons #menu-bars,
+header .icons a {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 5rem;
+    font-size: 2rem;
+    margin-right: .5rem;
+    border-radius: 0.5rem;
+    color: var(--red);
+    background: var(--light-red);
+    text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover {
+    background: var(--red);
+    color: #fff;
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+/* Header style end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query start */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background: #f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    header .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .fa-times{
+        transform: rotate(180deg);
+        transition: 0.2s linear;
+    }
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        background-color: #fff;
+        border: .1rem solid #333;
+        box-shadow: o 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media ( max-width:450px ) {
+    html{
+        font-size: 50%;
+    }
+}
+
+/* media query end */

@@ -226,7 +226,8 @@ header .icons #menu-bars {
 }
 
 .service .box-container .box img{
-    width: 100%;
+   width: 20rem;
+   height: 20rem;
 }
 
 /* Services style end */
@@ -505,6 +506,7 @@ header .icons #menu-bars {
 .contact .icons-container .icons p{
     font-size: 1.5rem;
     color: #666;
+    margin-top: .5rem;
 }
 
 /* form section */
@@ -559,7 +561,50 @@ header .icons #menu-bars {
 
 /* Contact section style end */
 
+/* Footer section start */
+.footer{
+    margin-top: 2rem;
+}
+.footer .footer-container{
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+}
+.footer .footer-container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.footer .footer-container .box-container .box{
+    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-container .box-container .box h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.footer .footer-container .box-container .box a{
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.footer .footer-container .credit{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.footer .footer-container .credit span{
+    color: var(--red);
+}
+
+/* Footer section end */
 
 
 

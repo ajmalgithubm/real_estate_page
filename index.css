@@ -241,7 +241,7 @@ header .icons #menu-bars {
     gap: 1.5rem;
 }
 .featured .box-container .box{
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     padding: 2rem;
     border: .1rem solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -352,16 +352,16 @@ header .icons #menu-bars {
 .featured .box-container .box .details{
     padding: .5rem 1.5rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .featured .box-container .box .details h3{
-    flex: 1 1 3rem;
-    background-color: #f7f7f7;
+    flex: 1 1 2rem;
+    background-color: var(--light-red);
     border: .1rem solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    font-size: 1.rem;
+    font-size: 1.1rem;
     border-radius: .5rem;
     text-align: center;
 }
@@ -375,6 +375,16 @@ header .icons #menu-bars {
     padding: 0.5rem 1.5rem;
 }
 
+.featured .box-container .box .buttons .btn{
+    background-color: var(--light-red);
+    padding: 1rem;
+    width: 49%;
+}
+
+.featured .box-container .box .buttons .btn:hover{
+    color: #fff;
+    background-color: var(--red);
+}
 
 /* featured style end */
 
